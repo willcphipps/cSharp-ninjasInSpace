@@ -36,7 +36,6 @@ namespace NinjasInSpace
             {
                 Console.WriteLine("Please type the number of the hero you would ike to be?\n1. Ninja\n2. Wizard\n3. Sensei");
                 choice = Console.ReadLine();
-                Console.WriteLine(choice);
             }
 
             switch (choice)
@@ -45,14 +44,19 @@ namespace NinjasInSpace
                     Ninja ninjaHero = new Ninja(name);
                     return ninjaHero;
                 case("2"):
+                    // Change Ninja to another class of hero.
                     Ninja wizardHero = new Ninja(name);
                     return wizardHero;
                 case("3"):
+                    // Change Ninja to another class of hero.
                     Ninja senseiHero = new Ninja(name);
                     return senseiHero;
             }
             return null;
         }
+
+
+        
 
 
     }
