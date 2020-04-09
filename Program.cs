@@ -11,7 +11,14 @@ namespace NinjasInSpace
 
             Hero player = PlayerSetup();
             
-            ConsoleYellow($"You, {player.Name}, have been chosen(randomly selected) to join a team of developer ninjas on a space quest!  To seek out new algorithms, new data structures, and go where no else wants to go! DEEP SPACE!!!\n\nHere you will encounter aliens, space monsters, and the unknown to bring back algorithms to benefit all humans. You now must choose your team.");
+            ConsoleYellow($"You, {player.Name}, have been chosen(randomly selected) to join a team of developer ninjas on a space quest!  To seek out new algorithms, new data structures, and go where no else wants to go! DEEP SPACE!!!\n\nHere you will encounter aliens, space monsters, and the unknown to bring back algorithms to benefit all humans. You now must choose your team.\n\nPress Enter to Start");
+
+            ConsoleKey key  = Console.ReadKey(true).Key;
+            while(key != ConsoleKey.Enter)
+            {
+                key  = Console.ReadKey(true).Key;
+            }
+            Console.WriteLine("BEGIN YOUR ADVENTURE HERE!!!");
 
             //write a method that will create other team mates.
 
